@@ -1,0 +1,23 @@
+/* Class = "UILabel"; text = "总资产"; ObjectID = "0Po-ny-ESs"; */
+"0Po-ny-ESs.text" = "Total Assets";
+
+/* Class = "UILabel"; text = "昨日收益"; ObjectID = "1gV-Ou-1Le"; */
+"1gV-Ou-1Le.text" = "Yesterday's Earnings";
+
+/* Class = "UILabel"; text = "我的项目"; ObjectID = "LiE-Aj-cNJ"; */
+"LiE-Aj-cNJ.text" = "My Projects";
+
+/* Class = "UILabel"; text = "28.30"; ObjectID = "OXr-R1-btx"; */
+"OXr-R1-btx.text" = "0.00"; // 保留数字
+
+/* Class = "UILabel"; text = "4345"; ObjectID = "PaZ-MC-RKJ"; */
+"PaZ-MC-RKJ.text" = "0"; // 保留数字
+
+/* Class = "UILabel"; text = "43.43"; ObjectID = "QY9-Zs-j3j"; */
+"QY9-Zs-j3j.text" = "0.00"; // 保留数字
+
+/* Class = "UILabel"; text = "我的数据"; ObjectID = "XWR-vj-dcq"; */
+"XWR-vj-dcq.text" = "My Data";
+
+/* Class = "UILabel"; text = "56"; ObjectID = "hDx-GR-EG7"; */
+"hDx-GR-EG7.text" = "0"; // 保留数字

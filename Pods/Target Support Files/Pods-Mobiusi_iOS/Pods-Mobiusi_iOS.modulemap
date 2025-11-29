@@ -1,0 +1,6 @@
+framework module Pods_Mobiusi_iOS {
+  umbrella header "Pods-Mobiusi_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

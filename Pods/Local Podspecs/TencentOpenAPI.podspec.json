@@ -1,0 +1,46 @@
+{
+  "name": "TencentOpenAPI",
+  "version": "3.5.12",
+  "summary": "QQ分享的pod仓库",
+  "description": "本仓库旨在收集最新的SDK方便使用cocoapods引入项目",
+  "homepage": "https://gitee.com/cocoa-pods/TencentOpenAPI_iOS",
+  "license": "MIT",
+  "authors": {
+    "JackLi": "522185660@qq.com"
+  },
+  "source": {
+    "git": "https://gitee.com/cocoa-pods/TencentOpenAPI_iOS.git",
+    "tag": "3.5.12"
+  },
+  "frameworks": [
+    "Security",
+    "CoreFoundation",
+    "MobileCoreServices",
+    "QuartzCore",
+    "SystemConfiguration",
+    "CoreGraphics",
+    "CoreTelephony",
+    "WebKit"
+  ],
+  "libraries": [
+    "iconv",
+    "sqlite3",
+    "stdc++",
+    "z",
+    "z.1.1.3"
+  ],
+  "platforms": {
+    "ios": "7.0"
+  },
+  "resources": "*.bundle",
+  "public_header_files": "*.framework/Headers/*.h",
+  "source_files": "*.framework/Headers/*.{h}",
+  "vendored_frameworks": "*.framework",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "requires_arc": true
+}

@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  Mobiusi_iOS
+
+  Created by Mac on 2025/3/25.
+  
+*/
+
+"NSCameraUsageDescription" = "需要访问您的相机，以便您拍摄照片或视频用于图片标注任务。";
+"NSDocumentsFolderUsageDescription" = "需要访问您的文件，以便您选择任务相关的文档辅助标注工作。";
+"NSLocationWhenInUseUsageDescription" = "需要访问您的定位信息，以便为您提供附近的高精度标注任务。";
+"NSMicrophoneUsageDescription" = "需要访问麦克风，以便完成音频标注任务中的语音转文字操作。";
+"NSPhotoLibraryUsageDescription" = "选择现有的图片或视频作为数据标注任务的素材。";
+"NSPhotoLibraryAddUsageDescription" = "保存图片到相册需要您的授权。";
+"UILaunchStoryboardName" = "LaunchScreen";
+

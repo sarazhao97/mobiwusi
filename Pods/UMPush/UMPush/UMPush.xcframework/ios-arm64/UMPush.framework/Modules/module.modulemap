@@ -1,0 +1,6 @@
+framework module UMPush {
+  umbrella header "UMPush.h"
+  export *
+
+  module * { export * }
+}

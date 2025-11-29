@@ -1,0 +1,380 @@
+/* Class = "UILabel"; text = "我的数据  我的财富"; ObjectID = "hck-S1-bnH"; */
+"hck-S1-bnH.text" = "My Data  My Wealth";
+
+/* Class = "UILabel"; text = "中不中？‌前半场儿咱还聊得挺好，‌后半场儿咋就变了呢？‌响午头儿了，‌咱们是不是该继续？‌擦黑儿了，‌要不咱们明天再说吧。‌半夜合地了，‌这事儿确实有点难办。‌我勒乖乖来，‌你这变化也太快了。‌去球吧，‌我看咱们还是各走各的吧。‌弄啥来？‌你到底想咋样？‌真得劲儿，‌我觉得咱们还是好好谈谈吧。‌嘚瑟啥？‌有啥好嘚瑟的？‌"; ObjectID = "1nt-sa-R7U"; */
+"1nt-sa-R7U.text" = "中不中？‌前半场儿咱还聊得挺好，‌后半场儿咋就变了呢？‌响午头儿了，‌咱们是不是该继续？‌擦黑儿了，‌要不咱们明天再说吧。‌半夜合地了，‌这事儿确实有点难办。‌我勒乖乖来，‌你这变化也太快了。‌去球吧，‌我看咱们还是各走各的吧。‌弄啥来？‌你到底想咋样？‌真得劲儿，‌我觉得咱们还是好好谈谈吧。‌嘚瑟啥？‌有啥好嘚瑟的？‌"; // 保留方言原文
+
+/* Class = "UILabel"; text = "莫比乌斯"; ObjectID = "2CD-AS-FX3"; */
+"2CD-AS-FX3.text" = "Mobiwusi"; // 品牌名保留
+
+/* Class = "UILabel"; text = "昨日收益"; ObjectID = "2FC-po-zvg"; */
+"2FC-po-zvg.text" = "Yesterday's Earnings";
+
+/* Class = "UILabel"; text = "3.5M"; ObjectID = "2G3-Kj-Jia"; */
+"2G3-Kj-Jia.text" = "3.5M";
+
+/* Class = "UILabel"; text = "音频数据"; ObjectID = "2e4-CL-zIr"; */
+"2e4-CL-zIr.text" = "Audio Data";
+
+/* Class = "UIButton"; normalTitle = "下一步"; ObjectID = "2ow-y6-8Ab"; */
+"2ow-y6-8Ab.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Mobi001"; ObjectID = "3cO-0R-s5K"; */
+"3cO-0R-s5K.text" = "Mobi001"; // 保留ID
+
+/* Class = "UILabel"; text = "消息通知"; ObjectID = "4mh-lw-7r6"; */
+"4mh-lw-7r6.text" = "Message Notifications";
+
+/* Class = "UILabel"; text = "检测更新"; ObjectID = "4ph-au-Ain"; */
+"4ph-au-Ain.text" = "Check for Updates";
+
+/* Class = "UILabel"; text = "我的标签"; ObjectID = "51z-MU-2E5"; */
+"51z-MU-2E5.text" = "My Tags";
+
+/* Class = "UILabel"; text = "22:32"; ObjectID = "6HE-vs-hzn"; */
+"6HE-vs-hzn.text" = "22:32";
+
+/* Class = "UILabel"; text = "账号"; ObjectID = "6lG-LC-bQ5"; */
+"6lG-LC-bQ5.text" = "MoID";
+
+/* Class = "UILabel"; text = "未通过原因：环境嘈杂，有过多背景音干扰清晰录制。"; ObjectID = "6po-Es-eKe"; */
+"6po-Es-eKe.text" = "Rejection Reason: Noisy environment with excessive background noise.";
+
+/* Class = "UIButton"; normalTitle = "下一个"; ObjectID = "79J-Ac-g0h"; */
+"79J-Ac-g0h.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "7Ns-QZ-0u5"; */
+"7Ns-QZ-0u5.normalTitle" = "One-Tap Login";
+
+/* Class = "UILabel"; text = "中不中？‌前半场儿咱还聊得挺好，‌后半场儿咋就变了呢？‌响午头儿了，‌咱们是不是该继续？‌擦黑儿了，‌要不咱们明天再说吧。‌半夜合地了，‌这事儿确实有点难办。‌我勒乖乖来，‌你这变化也太快了。‌去球吧，‌我看咱们还是各走各的吧。‌弄啥来？‌你到底想咋样？‌真得劲儿，‌我觉得咱们还是好好谈谈吧。‌嘚瑟啥？‌有啥好嘚瑟的？‌"; ObjectID = "86B-gb-0sd"; */
+"86B-gb-0sd.text" = "中不中？‌前半场儿咱还聊得挺好，‌后半场儿咋就变了呢？‌响午头儿了，‌咱们是不是该继续？‌擦黑儿了，‌要不咱们明天再说吧。‌半夜合地了，‌这事儿确实有点难办。‌我勒乖乖来，‌你这变化也太快了。‌去球吧，‌我看咱们还是各走各的吧。‌弄啥来？‌你到底想咋样？‌真得劲儿，‌我觉得咱们还是好好谈谈吧。‌嘚瑟啥？‌有啥好嘚瑟的？‌"; // 保留方言
+
+/* Class = "UILabel"; text = "2024年12月"; ObjectID = "8QR-NY-mzx"; */
+"8QR-NY-mzx.text" = "December 2024";
+
+/* Class = "UILabel"; text = "河南省郑州市北三环43号河南省郑州市北三环43号河南省郑州市北三环43号"; ObjectID = "8qs-0s-SW1"; */
+"8qs-0s-SW1.text" = "43 North Third Ring Road, Zhengzhou, Henan Province (repeated)";
+
+/* Class = "UILabel"; text = "资产明细"; ObjectID = "98e-GU-PAh"; */
+"98e-GU-PAh.text" = "Asset Details";
+
+/* Class = "UILabel"; text = "16kHZ"; ObjectID = "9dq-mf-wJJ"; */
+"9dq-mf-wJJ.text" = "16kHz";
+
+/* Class = "UILabel"; text = "用户协议"; ObjectID = "9vc-AC-OUy"; */
+"9vc-AC-OUy.text" = "User Agreement";
+
+/* Class = "UILabel"; text = "浙ICP备2024117967号-2A"; ObjectID = "AXn-7a-2R3"; */
+"AXn-7a-2R3.text" = "Zhejiang ICP备2024117967-2A"; // 保留备案号
+
+/* Class = "UILabel"; text = "意见反馈"; ObjectID = "Agp-0e-QNq"; */
+"Agp-0e-QNq.text" = "Feedback";
+
+/* Class = "UIButton"; normalTitle = "我的关注"; ObjectID = "B10-9y-wUi"; */
+"B10-9y-wUi.normalTitle" = "  My Followings  ";
+
+/* Class = "UILabel"; text = "昵称"; ObjectID = "BDh-5b-emf"; */
+"BDh-5b-emf.text" = "Nickname";
+
+/* Class = "UILabel"; text = "999"; ObjectID = "CaN-Rc-HWE"; */
+"CaN-Rc-HWE.text" = "999";
+
+/* Class = "UILabel"; text = "总资产"; ObjectID = "Cdn-aG-0h6"; */
+"Cdn-aG-0h6.text" = "Total Assets";
+
+/* Class = "UILabel"; text = "格式"; ObjectID = "Cv3-09-7Ez"; */
+"Cv3-09-7Ez.text" = "Format";
+
+/* Class = "UIButton"; normalTitle = "提现记录"; ObjectID = "DbQ-d2-azP"; */
+"DbQ-d2-azP.normalTitle" = "Withdrawal History";
+
+/* Class = "UILabel"; text = "银行卡号"; ObjectID = "Dpf-Tn-hh4"; */
+"Dpf-Tn-hh4.text" = "Bank Card Number";
+
+/* Class = "UILabel"; text = "上传图片"; ObjectID = "DrL-Si-Gon"; */
+"DrL-Si-Gon.text" = "Upload Image";
+
+/* Class = "UILabel"; text = "我的资产"; ObjectID = "EsK-vj-tBh"; */
+"EsK-vj-tBh.text" = "My Assets";
+
+/* Class = "UILabel"; text = "Step5：确认数据"; ObjectID = "FaM-QP-b1Z"; */
+"FaM-QP-b1Z.text" = "Step5: Confirm Data";
+
+/* Class = "UILabel"; text = "设备"; ObjectID = "G86-SY-bIW"; */
+"G86-SY-bIW.text" = "Device";
+
+/* Class = "UILabel"; text = "JPG"; ObjectID = "Hh5-ZU-2MQ"; */
+"Hh5-ZU-2MQ.text" = "JPG";
+
+/* Class = "UILabel"; text = "40s后重发"; ObjectID = "IIX-ob-Eua"; */
+"IIX-ob-Eua.text" = "Resend in 40s";
+
+/* Class = "UILabel"; text = "Hi，欢迎来到莫比乌斯"; ObjectID = "J8x-GO-mZ0"; */
+"J8x-GO-mZ0.text" = "Hi, Welcome to";
+
+/* Class = "UILabel"; text = "NOH-AN00"; ObjectID = "Ja0-Ak-wYD"; */
+"Ja0-Ak-wYD.text" = "NOH-AN00"; // 设备型号保留
+
+/* Class = "UIButton"; normalTitle = "注销账户"; ObjectID = "Jjr-hh-Lsz"; */
+"Jjr-hh-Lsz.normalTitle" = "Delete Account";
+
+/* Class = "UIButton"; normalTitle = "我的音频"; ObjectID = "Jwi-mA-DFE"; */
+"Jwi-mA-DFE.normalTitle" = "My Audio";
+
+/* Class = "UILabel"; text = "个人中心"; ObjectID = "LLB-ow-3cy"; */
+"LLB-ow-3cy.text" = "Profile";
+
+/* Class = "UILabel"; text = "分辨率"; ObjectID = "LaX-F1-sZZ"; */
+"LaX-F1-sZZ.text" = "Resolution";
+
+/* Class = "UIButton"; normalTitle = "退出登录"; ObjectID = "MQK-xT-giy"; */
+"MQK-xT-giy.normalTitle" = "Logout";
+
+/* Class = "UILabel"; text = "详情"; ObjectID = "MkJ-xS-0Of"; */
+"MkJ-xS-0Of.text" = "Details";
+
+/* Class = "UILabel"; text = "请用标准的陕西话读出以下文字"; ObjectID = "O32-o0-z9w"; */
+"O32-o0-z9w.text" = "Please read the following text in standard Shaanxi dialect.";
+
+/* Class = "UILabel"; text = "联系方式"; ObjectID = "OAv-pK-nYa"; */
+"OAv-pK-nYa.text" = "Contact Information";
+
+/* Class = "UILabel"; text = "图片标签"; ObjectID = "Oc6-1P-dUU"; */
+"Oc6-1P-dUU.text" = "Image Tags";
+
+/* Class = "UILabel"; text = "1043.99"; ObjectID = "P6F-Qu-VGf"; */
+"P6F-Qu-VGf.text" = "1043.99";
+
+/* Class = "UILabel"; text = "24:43"; ObjectID = "PFb-yw-eY9"; */
+"PFb-yw-eY9.text" = "24:43";
+
+/* Class = "UITextField"; placeholder = "请输入银行卡号"; ObjectID = "PJP-k2-XNJ"; */
+"PJP-k2-XNJ.placeholder" = "Enter Bank Card Number";
+
+/* Class = "UILabel"; text = "我的关注"; ObjectID = "QlN-V8-Cli"; */
+"QlN-V8-Cli.text" = "My Followings";
+
+/* Class = "UITextField"; placeholder = "电话号码/电子邮箱（仅工作人员可见）"; ObjectID = "RKr-px-LaJ"; */
+"RKr-px-LaJ.placeholder" = "Phone/Email (Visible to Staff Only)";
+
+/* Class = "UILabel"; text = "格式"; ObjectID = "U3K-VE-17W"; */
+"U3K-VE-17W.text" = "Format";
+
+/* Class = "UIButton"; normalTitle = "提现"; ObjectID = "U81-FB-h7s"; */
+"U81-FB-h7s.normalTitle" = "Withdraw";
+
+/* Class = "UILabel"; text = "欧游游-Timo"; ObjectID = "UZu-DX-3Ye"; */
+"UZu-DX-3Ye.text" = "Ouyouyou-Timo"; // 用户名保留
+
+/* Class = "UILabel"; text = "我的空间"; ObjectID = "UzT-Qv-ZWt"; */
+"UzT-Qv-ZWt.text" = "My Space";
+
+/* Class = "UITextField"; placeholder = "请输入密码"; ObjectID = "W6c-JP-Bj6"; */
+"W6c-JP-Bj6.placeholder" = "Enter Password";
+
+/* Class = "UILabel"; text = "当前余额(元)"; ObjectID = "WbX-wj-PBO"; */
+"WbX-wj-PBO.text" = "Current Balance (¥)";
+
+/* Class = "UILabel"; text = "Step4：检查数据"; ObjectID = "WqO-97-CwA"; */
+"WqO-97-CwA.text" = "Step4: Check Data";
+
+/* Class = "UILabel"; text = "APP备案号"; ObjectID = "Wxc-a3-HJF"; */
+"Wxc-a3-HJF.text" = "APP Filing Number";
+
+/* Class = "UIButton"; normalTitle = "录制下一个"; ObjectID = "X6A-O9-m4J"; */
+"X6A-O9-m4J.normalTitle" = "Record Next";
+
+/* Class = "UITextField"; placeholder = "请输入手机号"; ObjectID = "XaF-5E-OSL"; */
+"XaF-5E-OSL.placeholder" = "Enter Phone Number";
+
+/* Class = "UILabel"; text = "LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel"; ObjectID = "Xmf-z3-JNe"; */
+"Xmf-z3-JNe.text" = "LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel"; // 保留重复标签
+
+/* Class = "UILabel"; text = "申请提现"; ObjectID = "Xne-FT-YRv"; */
+"Xne-FT-YRv.text" = "Apply for Withdrawal";
+
+/* Class = "UILabel"; text = "点击开始"; ObjectID = "Y3D-QT-icW"; */
+"Y3D-QT-icW.text" = "Tap to Start";
+
+/* Class = "UILabel"; text = "图片详情"; ObjectID = "YO5-g2-2Bf"; */
+"YO5-g2-2Bf.text" = "Image Details";
+
+/* Class = "UILabel"; text = "43.43"; ObjectID = "YQp-Or-RPz"; */
+"YQp-Or-RPz.text" = "43.43";
+
+/* Class = "UILabel"; text = "欧游游-Timo"; ObjectID = "YXc-bv-7Vd"; */
+"YXc-bv-7Vd.text" = "Ouyouyou-Timo";
+
+/* Class = "UIButton"; normalTitle = "提交申请"; ObjectID = "Z19-IP-yd8"; */
+"Z19-IP-yd8.normalTitle" = "Submit Application";
+
+/* Class = "UILabel"; text = "3.5MB/5GB"; ObjectID = "aKw-H7-FdX"; */
+"aKw-H7-FdX.text" = "3.5MB/5GB";
+
+/* Class = "UILabel"; text = "作者"; ObjectID = "aPM-xL-4Ju"; */
+"aPM-xL-4Ju.text" = "Author";
+
+/* Class = "UILabel"; text = "头像"; ObjectID = "aTY-Nr-8VM"; */
+"aTY-Nr-8VM.text" = "Profile Picture";
+
+/* Class = "UILabel"; text = "网页"; ObjectID = "aft-aY-A1v"; */
+"aft-aY-A1v.text" = "Webpage";
+
+/* Class = "UILabel"; text = "24:43"; ObjectID = "bYo-pq-hNx"; */
+"bYo-pq-hNx.text" = "24:43";
+
+/* Class = "UILabel"; text = "提现金额"; ObjectID = "baF-9D-4Az"; */
+"baF-9D-4Az.text" = "Withdrawal Amount";
+
+/* Class = "UIButton"; normalTitle = "上一个"; ObjectID = "bmn-fs-h6X"; */
+"bmn-fs-h6X.normalTitle" = "Previous";
+
+/* Class = "UILabel"; text = "隐私政策"; ObjectID = "brg-cm-ZZI"; */
+"brg-cm-ZZI.text" = "Privacy Policy";
+
+/* Class = "UIButton"; normalTitle = "查看要求"; ObjectID = "c4k-wd-Akz"; */
+"c4k-wd-Akz.normalTitle" = "View Requirements";
+
+/* Class = "UILabel"; text = "999"; ObjectID = "cAU-lQ-x2Q"; */
+"cAU-lQ-x2Q.text" = "999";
+
+/* Class = "UILabel"; text = "位置"; ObjectID = "cEb-Y9-soH"; */
+"cEb-Y9-soH.text" = "Location";
+
+/* Class = "UILabel"; text = "下一条"; ObjectID = "cgt-gD-STO"; */
+"cgt-gD-STO.text" = "Next Item";
+
+/* Class = "UITextField"; placeholder = "请输入验证码"; ObjectID = "cnK-0A-b7L"; */
+"cnK-0A-b7L.placeholder" = "Enter Verification Code";
+
+/* Class = "UILabel"; text = "反馈内容"; ObjectID = "dAS-ET-cES"; */
+"dAS-ET-cES.text" = "Feedback Content";
+
+/* Class = "UILabel"; text = "开户行名称"; ObjectID = "den-DA-13X"; */
+"den-DA-13X.text" = "Bank Name";
+
+/* Class = "UIButton"; normalTitle = "下一个"; ObjectID = "dlk-T4-Psu"; */
+"dlk-T4-Psu.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "项目列表"; ObjectID = "eLi-hs-Lfg"; */
+"eLi-hs-Lfg.text" = "Project List";
+
+/* Class = "UILabel"; text = "4096x3072"; ObjectID = "eaH-CD-AGQ"; */
+"eaH-CD-AGQ.text" = "4096x3072";
+
+/* Class = "UIButton"; normalTitle = "提交"; ObjectID = "enw-95-VAc"; */
+"enw-95-VAc.normalTitle" = "Submit";
+
+/* Class = "UILabel"; text = "音频详情"; ObjectID = "fJX-0Z-Svl"; */
+"fJX-0Z-Svl.text" = "Audio Details";
+
+/* Class = "UILabel"; text = "Step3：点击开始录制"; ObjectID = "gJC-QT-q3I"; */
+"gJC-QT-q3I.text" = "Step3: Tap to Start Recording";
+
+/* Class = "UILabel"; text = "WAV"; ObjectID = "gJt-fb-FVb"; */
+"gJt-fb-FVb.text" = "WAV";
+
+/* Class = "UIButton"; normalTitle = "  示例"; ObjectID = "gOw-Cy-DYD"; */
+"gOw-Cy-DYD.normalTitle" = "  Sample";
+
+/* Class = "UIButton"; selectedTitle = "  sample"; ObjectID = "gOw-Cy-DYD"; */
+"gOw-Cy-DYD.selectedTitle" = "  sample";
+
+/* Class = "UILabel"; text = "1043.99"; ObjectID = "geT-oo-bkE"; */
+"geT-oo-bkE.text" = "1043.99";
+
+/* Class = "UIButton"; normalTitle = "再来一次"; ObjectID = "gkQ-11-VKR"; */
+"gkQ-11-VKR.normalTitle" = "Try Again";
+
+/* Class = "UILabel"; text = "作者"; ObjectID = "h39-90-yD3"; */
+"h39-90-yD3.text" = "Author";
+
+/* Class = "UILabel"; text = "999"; ObjectID = "htf-Qt-LYw"; */
+"htf-Qt-LYw.text" = "999";
+
+/* Class = "UILabel"; text = "清理缓存"; ObjectID = "lr2-N5-pu8"; */
+"lr2-N5-pu8.text" = "Clear Cache";
+
+/* Class = "UILabel"; text = "文本内容"; ObjectID = "lxw-nP-fAp"; */
+"lxw-nP-fAp.text" = "Text Content";
+
+/* Class = "UIButton"; normalTitle = "上一个"; ObjectID = "m5x-QK-hp8"; */
+"m5x-QK-hp8.normalTitle" = "Previous";
+
+/* Class = "UITextField"; placeholder = "请输入开户行名称"; ObjectID = "mCB-ER-Z1e"; */
+"mCB-ER-Z1e.placeholder" = "Enter Bank Name";
+
+/* Class = "UILabel"; text = "音频标签"; ObjectID = "nN4-bO-ahF"; */
+"nN4-bO-ahF.text" = "Audio Tags";
+
+/* Class = "UILabel"; text = "试听"; ObjectID = "nPD-4F-KLc"; */
+"nPD-4F-KLc.text" = "Preview";
+
+/* Class = "UILabel"; text = "音频文本"; ObjectID = "nUR-kk-ZyU"; */
+"nUR-kk-ZyU.text" = "Audio Text";
+
+/* Class = "UILabel"; text = "欧游游-Timo"; ObjectID = "oPa-WP-4yf"; */
+"oPa-WP-4yf.text" = "Ouyouyou-Timo";
+
+/* Class = "UILabel"; text = "Step2：录音文本"; ObjectID = "pZL-wk-R9I"; */
+"pZL-wk-R9I.text" = "Step2: Recorded Text";
+
+/* Class = "UILabel"; text = "收款人姓名"; ObjectID = "qoa-Hv-i6a"; */
+"qoa-Hv-i6a.text" = "Beneficiary Name";
+
+/* Class = "UIButton"; normalTitle = "发送"; ObjectID = "qyJ-97-16f"; */
+"qyJ-97-16f.normalTitle" = "Get verification code";
+
+/* Class = "UILabel"; text = "采样率"; ObjectID = "r3o-tE-GhI"; */
+"r3o-tE-GhI.text" = "Sample Rate";
+
+/* Class = "UILabel"; text = "28.99"; ObjectID = "rYl-aP-YTQ"; */
+"rYl-aP-YTQ.text" = "28.99";
+
+/* Class = "UILabel"; text = "收益￥123.45 提现￥200.00"; ObjectID = "sBe-IV-Pno"; */
+"sBe-IV-Pno.text" = "Earnings ¥123.45 | Withdraw ¥200.00";
+
+/* Class = "UILabel"; text = "已完成7条，共计3:45"; ObjectID = "tEA-Sb-pIE"; */
+"tEA-Sb-pIE.text" = "7 Items Completed (3:45 Total)";
+
+/* Class = "UILabel"; text = "188kb"; ObjectID = "uXY-HQ-Ngd"; */
+"uXY-HQ-Ngd.text" = "188kb";
+
+/* Class = "UILabel"; text = "时长"; ObjectID = "ugt-gz-eIv"; */
+"ugt-gz-eIv.text" = "Duration";
+
+/* Class = "UILabel"; text = "文本详情"; ObjectID = "ujA-ky-Bt9"; */
+"ujA-ky-Bt9.text" = "Text Details";
+
+/* Class = "UILabel"; text = "意见反馈"; ObjectID = "wCT-hP-WmI"; */
+"wCT-hP-WmI.text" = "Feedback";
+
+/* Class = "UILabel"; text = "V1.0"; ObjectID = "xGd-ww-H8m"; */
+"xGd-ww-H8m.text" = "V1.0";
+
+/* Class = "UILabel"; text = "录音棚"; ObjectID = "xXy-St-fRG"; */
+"xXy-St-fRG.text" = "Recording Studio";
+
+/* Class = "UILabel"; text = "累计收益"; ObjectID = "xkq-9H-F2h"; */
+"xkq-9H-F2h.text" = "Total Earnings";
+
+/* Class = "UILabel"; text = "作者"; ObjectID = "xtl-Qu-oWy"; */
+"xtl-Qu-oWy.text" = "Author";
+
+/* Class = "UITextField"; placeholder = "请输入收款人姓名"; ObjectID = "yCz-N7-wkA"; */
+"yCz-N7-wkA.placeholder" = "Enter Beneficiary Name";
+
+/* Class = "UILabel"; text = "Step1：阅读录音要求"; ObjectID = "yMV-Nv-Fln"; */
+"yMV-Nv-Fln.text" = "Step1: Read Recording Requirements";
+
+/* Class = "UILabel"; text = "河南话录音20240707"; ObjectID = "yZy-iI-1GE"; */
+"yZy-iI-1GE.text" = "Henan Dialect Recording 20240707";
+
+/* Class = "UIButton"; normalTitle = "+关注"; ObjectID = "z0O-lW-pb7"; */
+"z0O-lW-pb7.normalTitle" = "+Follow";
+
+/* Class = "UILabel"; text = "我已阅读并同意《用户协议》及《隐私协议》"; ObjectID = "zji-kA-z9e"; */
+"zji-kA-z9e.text" = "I accept 《User Agreement》 & 《Privacy Policy》"; // 保留《》
+
+/* Class = "UILabel"; text = "联系我们"; ObjectID = "X2h-5e-mq9"; */
+"X2h-5e-mq9.text" = "Contact Us";

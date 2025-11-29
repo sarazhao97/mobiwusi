@@ -1,0 +1,24 @@
+/* 
+  InfoPlist.strings
+  Mobiusi_iOS
+
+  Created by Mac on 2025/3/25.
+  
+*/
+// Camera 权限 - 标注任务专用
+"NSCameraUsageDescription" = "To enable you to capture photos/videos for labeling tasks (e.g., annotating product images), camera access is required.";
+
+// Documents 权限 - 文件选择场景
+"NSDocumentsFolderUsageDescription" = "To let you select reference documents (PDF/Word/Excel) for task-specific guidelines, local file access is needed. ";
+
+// Location 权限 - 地理围栏标注
+"NSLocationWhenInUseUsageDescription" = "To deliver hyper-local labeling tasks near you (e.g., verifying street signs in your neighborhood), location access is requested while the app is active.";
+
+// Microphone 权限 - 语音标注技术说明
+"NSMicrophoneUsageDescription" = "To enable speech-to-text transcription for audio labeling (e.g., converting meeting minutes into text), microphone access is required. ";
+
+// Photo Library 权限 - 用户控制流程
+"NSPhotoLibraryUsageDescription" = "To let you choose existing images/videos from your library as reference materials for labeling (e.g., selecting packaging examples for product training data), photo library access is needed.";
+"NSPhotoLibraryAddUsageDescription" = "To save images to your photo library, add-only access is required.";
+
+"UILaunchStoryboardName" = "LaunchScreen-EN";

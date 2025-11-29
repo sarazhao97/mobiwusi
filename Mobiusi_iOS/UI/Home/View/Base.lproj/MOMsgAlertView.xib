@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MOMsgAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wu0-xM-FGd">
+                    <rect key="frame" x="20" y="237.66666666666663" width="353" height="402"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oA-OO-BhJ">
+                            <rect key="frame" x="158" y="18" width="37" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WK-ZO-vWu">
+                            <rect key="frame" x="30" y="62.000000000000028" width="293" height="226.99999999999997"/>
+                            <attributedString key="attributedText">
+                                <fragment content="1">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="、按照文本用河南话读，一个人只能录一次">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="; 2">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="、环境">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=":">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="在安静的家居环境录制">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="(">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="卧室、书房等，请关">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="闭一切可能发声的电器，比如空调、电扇等">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=") 3">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="、录音只能用手机录音，不能用其他电子设备录音">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="; 4">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="、嘴巴距离手机">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="30">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="厘米左右">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="(">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="不允许喷麦、截幅，音量大的稍微控制一下不用特别大，声音也不要特别小，正常说话声就好">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="); 5">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="、界面要求请看仔细，注意区分语速和音量">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=";">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a11-KE-vYo" customClass="MOButton">
+                            <rect key="frame" x="312" y="19.000000000000028" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="k2l-FT-msi"/>
+                                <constraint firstAttribute="width" constant="22" id="mfM-MX-y0K"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button" image="icon_popup_close_gray.png"/>
+                            <connections>
+                                <action selector="closeClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="YkN-ND-yUR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzw-12-FF7">
+                            <rect key="frame" x="20" y="319" width="151.66666666666666" height="49"/>
+                            <color key="backgroundColor" red="0.92950350049999997" green="0.93288642170000002" blue="0.96078854800000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="RKC-cd-MRy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.55620992179999995" green="0.16467863320000001" blue="0.19605648519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="gfw-bK-ZHr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p0-Rg-vEh">
+                            <rect key="frame" x="181.66666666666663" y="319" width="151.33333333333337" height="49"/>
+                            <color key="backgroundColor" red="0.55620992179999995" green="0.16467863320000001" blue="0.19605648519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="PO0-uF-W27"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="确认">
+                                <color key="titleColor" red="0.92950350049999997" green="0.93288642170000002" blue="0.96078854800000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="sureClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="xq9-Kt-ErF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="a11-KE-vYo" firstAttribute="top" secondItem="wu0-xM-FGd" secondAttribute="top" constant="19" id="1wA-Ab-mwZ"/>
+                        <constraint firstItem="6WK-ZO-vWu" firstAttribute="top" secondItem="3oA-OO-BhJ" secondAttribute="bottom" constant="22" id="4BC-8d-W3W"/>
+                        <constraint firstItem="3oA-OO-BhJ" firstAttribute="top" secondItem="wu0-xM-FGd" secondAttribute="top" constant="18" id="5sy-0w-pPy"/>
+                        <constraint firstItem="Gzw-12-FF7" firstAttribute="leading" secondItem="wu0-xM-FGd" secondAttribute="leading" constant="20" id="EHt-q9-eVl"/>
+                        <constraint firstAttribute="trailing" secondItem="6WK-ZO-vWu" secondAttribute="trailing" constant="30" id="F3f-zs-mLU"/>
+                        <constraint firstItem="0p0-Rg-vEh" firstAttribute="width" secondItem="Gzw-12-FF7" secondAttribute="width" id="Hr1-kN-ytj"/>
+                        <constraint firstItem="Gzw-12-FF7" firstAttribute="top" secondItem="6WK-ZO-vWu" secondAttribute="bottom" constant="30" id="JuS-VK-Fsy"/>
+                        <constraint firstItem="3oA-OO-BhJ" firstAttribute="centerX" secondItem="wu0-xM-FGd" secondAttribute="centerX" id="K3p-Fa-m3k"/>
+                        <constraint firstAttribute="trailing" secondItem="a11-KE-vYo" secondAttribute="trailing" constant="19" id="Nao-Az-3Ok"/>
+                        <constraint firstItem="6WK-ZO-vWu" firstAttribute="leading" secondItem="wu0-xM-FGd" secondAttribute="leading" constant="30" id="bmQ-qN-wjv"/>
+                        <constraint firstItem="0p0-Rg-vEh" firstAttribute="leading" secondItem="Gzw-12-FF7" secondAttribute="trailing" constant="10" id="gcl-91-b10"/>
+                        <constraint firstAttribute="bottom" secondItem="Gzw-12-FF7" secondAttribute="bottom" constant="34" id="h5P-SK-Yei"/>
+                        <constraint firstItem="0p0-Rg-vEh" firstAttribute="centerY" secondItem="Gzw-12-FF7" secondAttribute="centerY" id="uws-dd-DRZ"/>
+                        <constraint firstAttribute="trailing" secondItem="0p0-Rg-vEh" secondAttribute="trailing" constant="20" id="uzh-FM-Z1k"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wu0-xM-FGd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="5Tx-a8-H4n"/>
+                <constraint firstItem="wu0-xM-FGd" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Wal-Pw-6Ln"/>
+                <constraint firstAttribute="trailing" secondItem="wu0-xM-FGd" secondAttribute="trailing" constant="20" id="ggD-jx-UOo"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelButton" destination="Gzw-12-FF7" id="p1d-ul-exJ"/>
+                <outlet property="msgLabel" destination="6WK-ZO-vWu" id="fIL-c3-Lj8"/>
+                <outlet property="sureButton" destination="0p0-Rg-vEh" id="1MA-8K-r1g"/>
+                <outlet property="title" destination="3oA-OO-BhJ" id="tyA-TH-LG3"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="10"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_popup_close_gray.png" width="22" height="22"/>
+    </resources>
+</document>

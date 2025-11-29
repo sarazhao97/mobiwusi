@@ -1,0 +1,60 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "B0K-wY-Y9Y.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"B0K-wY-Y9Y\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "HYO-Cm-lH0.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"我已知晓相关要求\"; ObjectID = \"HYO-Cm-lH0\";",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I acknowledge the relevant requirements."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我已知晓相关要求"
+          }
+        }
+      }
+    },
+    "lzn-eQ-QET.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"项目要求\"; ObjectID = \"lzn-eQ-QET\";",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Project Requirements"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "项目要求"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

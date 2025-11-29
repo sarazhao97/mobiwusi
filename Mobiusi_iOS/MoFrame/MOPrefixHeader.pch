@@ -1,0 +1,146 @@
+//
+//  MOPrefixHeader.pch
+//  Mobiusi_iOS
+//
+//  Created by x11 on 2024/8/19.
+//
+
+#ifndef MOPrefixHeader_pch
+#define MOPrefixHeader_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <Masonry/Masonry.h>
+    #import "YYModel.h"
+    #import "UIColor+Hex.h"
+    #import "UIImage+Additions.h"
+    #import "UINavigationController+FDFullscreenPopGesture.h"
+    #import "MONetDataServer.h"
+    #import "MOBlockDef.h"
+    #import "SINGLETONGCD.h"
+    #import "AppDelegate.h"
+    #import "NSString+Util.h"
+    #import "AppToken.h"
+    #import "MOModel.h"
+    #import "MOButton.h"
+    #import "MBProgressHUD+Add.h"
+    #import "YYText.h"
+    #import "NSObject+FBKVOController.h"
+    #import "MOUserModel.h"
+    #import "MONavigationController.h"
+    #import "Util.h"
+    #import "UIImageView+WebCache.h"
+    #import "MJRefresh.h"
+    #import "UIView+Corners.h"
+    #import "UIButton+BasicSettings.h"
+    #import "UILabel+Fast.h"
+    #import "NSString+MobiusiTool.h"
+    #import "MOView.h"
+    #import "MOLabel.h"
+    #import "UIDevice+Info.h"
+    #import "NSAttributedString+QuicklyCreate.h"
+    #import "PHAsset+ProcessVideo.h"
+    #import "AVURLAsset+VideoInfo.h"
+    #import "PHAsset+ImageInfo.h"
+    #import "NSString+MobiusiTool.h"
+    #import "UIView+Extension.h"
+    #import <UITableView+FDTemplateLayoutCell.h>
+    #import <UITableView+FDIndexPathHeightCache.h>
+    #import "MOVoicePlayView.h"
+    #import "MOBaseScheduleCell.h"
+	#import "UILabel+Padding.h"
+
+#endif
+
+#ifdef DEBUG
+#define DLog(fmt, ...)       NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+
+#define MOAppDelegate                   ((AppDelegate *)[UIApplication sharedApplication].delegate)
+#define MOAppDelegateClass              [AppDelegate class]
+#define WEAKSELF                        typeof(self) __weak weakSelf = self;
+#define SCREEN_WIDTH                    ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT                   ([UIScreen mainScreen].bounds.size.height)
+#define Is_Iphone                       ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+#define Is_IPhoneX                      (SCREEN_WIDTH >=375.0f && SCREEN_HEIGHT >=812.0f && Is_Iphone)
+#define STATUS_BAR_HEIGHT               (Is_IPhoneX ? (44.0):(20.0))
+#define TABBAR_HEIGHT                   (Is_IPhoneX ? (49.0 + 34.0):(49.0))
+#define NAV_HEIGHT                      (Is_IPhoneX ? 88 : 64)
+#define Bottom_SafeHeight               (Is_IPhoneX ? (34.0):(0))
+#define SafeAreaHeight                  MOAppDelegate.window.safeAreaLayoutGuide.layoutFrame.size.height
+#define STATUS_BAR_Height_CODE          [UIDevice statusBarFromCode]
+#define APPVersionString                [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"]
+
+#define MOPingFangSCFont(value)         [UIFont fontWithName:@"PingFangSC-Regular" size:(value)]
+#define MOPingFangSCHeavyFont(value)    [UIFont fontWithName:@"PingFangSC-Medium" size:(value)]
+#define MOPingFangSCMediumFont(value)   [UIFont fontWithName:@"PingFangSC-Medium" size:(value)]
+#define MOPingFangSCBoldFont(value)     [UIFont fontWithName:@"PingFangSC-Semibold" size:(value)]
+#define StringWithFormat(format,...)    [NSString stringWithFormat:format,##__VA_ARGS__]
+#define isCurrentLanguageChinese        [[NSLocale preferredLanguages].firstObject containsString:@"zh-Hans"]
+// strings
+
+/// 主色调红色
+#define MainSelectColor      [UIColor colorWithHexString:@"#9A1E2E"]
+
+#define TabNormalColor       [UIColor colorWithHexString:@"#01070D"]
+#define WhiteColor           [UIColor colorWithHexString:@"#FFFFFF"]
+#define ClearColor           UIColor.clearColor
+#define BlackColor           UIColor.blackColor
+#define Color9B9B9B          [UIColor colorWithHexString:@"#9B9B9B"]
+#define ColorEC0000          [UIColor colorWithHexString:@"#EC0000"]
+#define Color333333          [UIColor colorWithHexString:@"#333333"]
+#define Color626262          [UIColor colorWithHexString:@"#626262"]
+#define ColorF6F7FA          [UIColor colorWithHexString:@"#F6F7FA"]
+#define ColorAFAFAF          [UIColor colorWithHexString:@"#AFAFAF"]
+#define ColorFF4242          [UIColor colorWithHexString:@"#FF4242"]
+#define Color9A1E2E          [UIColor colorWithHexString:@"#9A1E2E"]
+#define ColorF9ECD7          [UIColor colorWithHexString:@"#F9ECD7"]
+#define ColorFBF2EA          [UIColor colorWithHexString:@"#FBF2EA"]
+#define ColorE5F2F9          [UIColor colorWithHexString:@"#E5F2F9"]
+#define ColorD9DAE3          [UIColor colorWithHexString:@"#D9DAE3"]
+#define ColorFF0000          [UIColor colorWithHexString:@"#FF0000"]
+#define ColorEDEEF5          [UIColor colorWithHexString:@"#EDEEF5"]
+#define Color002FA7          [UIColor colorWithHexString:@"#002FA7"]
+#define Color002FA8          [UIColor colorWithHexString:@"#002FA8"]
+#define ColorFC9E09          [UIColor colorWithHexString:@"#FC9E09"]
+#define Color34C759          [UIColor colorWithHexString:@"#34C759"]
+#define ColorEC6200          [UIColor colorWithHexString:@"#EC6200"]
+#define ColorECC800          [UIColor colorWithHexString:@"#ECC800"]
+#define ColorF2F2F2          [UIColor colorWithHexString:@"#F2F2F2"]
+#define ColorA2002D          [UIColor colorWithHexString:@"#A2002D"]
+#define ColorFFAE00          [UIColor colorWithHexString:@"#FFAE00"]
+#define ColorFF4A4A          [UIColor colorWithHexString:@"#FF4A4A"]
+#define ColorE24E66          [UIColor colorWithHexString:@"#E24E66"]
+#define Color959998          [UIColor colorWithHexString:@"#959998"]
+#define ColorEDEEF4          [UIColor colorWithHexString:@"#EDEEF4"]
+#define ColorCCB94C          [UIColor colorWithHexString:@"#CCB94C"]
+#define Color828282          [UIColor colorWithHexString:@"#828282"]
+#define ColorD9D9D9          [UIColor colorWithHexString:@"#D9D9D9"]
+
+#define Color606060          [UIColor colorWithHexString:@"#606060"]
+
+
+
+
+//通知
+#define SearchKeyWordNew        @"SearchKeyWordNew"
+#define SearchHistoryList       @"SearchHistoryList"
+#define CompletedOneTopic       @"CompletedOneTopic"
+#define WXLoginCallBack         @"WXLoginCallBack"
+
+// 内联函数替代宏
+
+//微信APPid
+#define WX_APP_ID       @"wxccae8b335c218252"
+#define UNIVERSAL_LINK  @"https://m.mobiwusi.com/"
+
+#define dispatch_main_async_safe(block)\
+    if (dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL) == dispatch_queue_get_label(dispatch_get_main_queue())) {\
+        block();\
+    } else {\
+        dispatch_async(dispatch_get_main_queue(), block);\
+    }
+#endif /* MOPrefixHeader_pch */

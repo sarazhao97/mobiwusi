@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "取消"; ObjectID = "0CT-bD-z2L"; */
+"0CT-bD-z2L.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8xs-uy-JLx"; */
+"8xs-uy-JLx.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "标题"; ObjectID = "Zcv-iu-ZH8"; */
+"Zcv-iu-ZH8.text" = "标题";
+
+/* Class = "UIButton"; normalTitle = "确认"; ObjectID = "ch3-pR-90d"; */
+"ch3-pR-90d.normalTitle" = "Confirm";
