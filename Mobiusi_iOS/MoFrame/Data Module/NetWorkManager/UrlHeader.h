@@ -11,11 +11,11 @@
 
 
 #ifdef DEBUG
-#define API_HOST @"http://api.dev.mobiwusi.com"
-// #define API_HOST @"https://app-api.mobiwusi.com"
+// #define API_HOST @"http://api.dev.mobiwusi.com"
+#define API_HOST @"https://app-api.mobiwusi.com"
 #else
-// #define API_HOST @"https://app-api.mobiwusi.com"
-#define API_HOST @"http://api.dev.mobiwusi.com"
+#define API_HOST @"https://app-api.mobiwusi.com"
+// #define API_HOST @"http://api.dev.mobiwusi.com"
 
 #endif
 

@@ -205,7 +205,7 @@ struct MineViewController:View {
                     .resizable()
                     .scaledToFill()
             } placeholder: {
-                Image("512_1")
+                Image("icon_default_avatar")
                     .resizable()
                     .scaledToFill()
             }

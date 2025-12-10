@@ -630,11 +630,12 @@ struct CustomCacheClearAlert: View {
 extension SettingViewController {
   func checkAndPromptNotificationPermission() {
     UNUserNotificationCenter.current().getNotificationSettings { settings in
+        let status = settings.authorizationStatus
         DispatchQueue.main.async {
-            if settings.authorizationStatus == .denied {
+            if status == .denied {
                 // 显示 SwiftUI 的自定义 alert
                 self.showNotificationPermissionAlert = true
-            } else if settings.authorizationStatus == .notDetermined {
+            } else if status == .notDetermined {
                 // 请求权限
                 requestNotificationAuthorization()
             }
@@ -645,10 +646,11 @@ extension SettingViewController {
 
 private func innerCheckAndPrompt() {
     UNUserNotificationCenter.current().getNotificationSettings { settings in
+        let status = settings.authorizationStatus
         DispatchQueue.main.async {
-            if settings.authorizationStatus == .denied {
+            if status == .denied {
                 showNotificationPermissionAlert = true
-            } else if settings.authorizationStatus == .notDetermined {
+            } else if status == .notDetermined {
                 requestNotificationPermission()
             }
         }

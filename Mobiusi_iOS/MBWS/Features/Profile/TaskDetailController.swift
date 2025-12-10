@@ -490,8 +490,19 @@ struct TaskDetailController: View {
             startWaveformAnimation()
         } else {
             print("❌ 录音启动失败")
-            // 如果录音启动失败，恢复状态
-            isRecording = false
+            // 尝试一次快速恢复：重新配置会话与录音器后重试
+            isAudioRecorderConfigured = false
+            audioRecorder = nil
+            setupAudioRecorder()
+            if let recorder = audioRecorder, recorder.record() {
+                print("✅ 重试后录音启动成功")
+                startRecordingTimer()
+                startWaveformAnimation()
+            } else {
+                // 如果重试仍失败，恢复状态
+                isRecording = false
+                print("❌ 重试录音仍失败")
+            }
         }
     }
     
@@ -549,8 +560,12 @@ struct TaskDetailController: View {
         }
         
         do {
-            // 配置音频会话
-            try audioSession.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker])
+            // 配置音频会话（支持扬声器与蓝牙）
+            try audioSession.setCategory(
+                .playAndRecord,
+                mode: .default,
+                options: [.defaultToSpeaker, .allowBluetooth, .allowBluetoothA2DP]
+            )
             try audioSession.setActive(true)
             
             // 创建录音文件URL
@@ -569,6 +584,7 @@ struct TaskDetailController: View {
             // 创建录音器
             audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
             audioRecorder?.prepareToRecord()
+            audioRecorder?.isMeteringEnabled = true
             
             // 标记配置完成
             isAudioRecorderConfigured = true
@@ -1374,8 +1390,10 @@ struct TaskDetailController: View {
                 
                 // 录音面板内容
                 VStack(spacing: 0) {
-                    ZStack(alignment:.topLeading){
-                         // 左上角序号角标
+                    ZStack{
+                        VStack{
+                            HStack{
+                                  // 左上角序号角标
                         HStack {
                             let audioItems = taskDetail?.topic_list_data?.filter({ ($0.cate ?? 0) == 1 }) ?? []
                             let currentIndex = audioItems.firstIndex(where: { $0.id == currentSelectedGridId }) ?? 0
@@ -1395,6 +1413,11 @@ struct TaskDetailController: View {
                         }
                         .padding(.horizontal, 0)
                         .padding(.top, 0)
+                                Spacer()
+                            }
+                            Spacer()
+                        }
+                       
                     
                     
                     VStack(spacing: 20) {
@@ -1418,7 +1441,7 @@ struct TaskDetailController: View {
                         Spacer()
                         
                         // 底部录制按钮区域
-                        ZStack {
+                        ZStack{
                             VStack(spacing: 0) {
                                 // 提示文本区域 - 固定高度
                                 VStack {

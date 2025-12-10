@@ -115,7 +115,7 @@ extension MOAICameraSelectStyleView: UICollectionViewDataSource, UICollectionVie
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		guard scrollView is UICollectionView else { return }
 		let offset  = scrollView.contentOffset.x + scrollView.contentInset.left
-		let index =  Int(_math.round(offset / 50.0))
+		let index = Int((offset / CGFloat(50.0)).rounded())
 		let dataListCount = dataList?.count ?? 0
 		if selectedIndex != index,index >= 0,index <= dataListCount - 1  {
 			guard let collection = scrollView as? UICollectionView else { return }
@@ -137,5 +137,4 @@ extension MOAICameraSelectStyleView: UICollectionViewDataSource, UICollectionVie
 		
 	}
 }
-
 

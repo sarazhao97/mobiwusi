@@ -72,6 +72,18 @@ struct NotificationController: View {
             VStack{
              // 自定义标题栏
             customNavigationBar()
+            if notifications.isEmpty{
+                VStack(alignment:.center,spacing:30){
+                    Image("icon_data_empty")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 150, height: 150)
+                    Text("暂时没有消息")
+                        .font(.system(size: 16,weight:.bold))
+                        .foregroundColor(Color(hex:"#000000"))
+                }
+                .padding(.top,80)
+            }else{
             ScrollView(showsIndicators: false){
                 LazyVStack(spacing: 10) {
                     ForEach(notifications) { message in
@@ -104,66 +116,14 @@ struct NotificationController: View {
                 }
                 
             }
+            
+            }
+            Spacer()
          }
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
-        // .navigationTitle("消息通知")
-        // .toolbar{
-        //     ToolbarItem(placement: .navigationBarLeading) {
-        //         Button(action: { 
-        //             // 优先尝试 SwiftUI 的 dismiss
-        //             dismiss()
-        //             // 兜底：使用 UIKit 关闭当前视图（适用于 AI 页面等没有 NavigationController 的情况）
-        //             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-        //                 if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-        //                    let window = windowScene.windows.first(where: { $0.isKeyWindow }),
-        //                    var top = window.rootViewController {
-        //                     while let presented = top.presentedViewController {
-        //                         top = presented
-        //                     }
-        //                     // 如果是 NavigationController，尝试 pop
-        //                     if let navController = top as? UINavigationController {
-        //                         if navController.viewControllers.count > 1 {
-        //                             navController.popViewController(animated: true)
-        //                         } else {
-        //                             navController.dismiss(animated: true)
-        //                         }
-        //                     } else if let navController = top.navigationController {
-        //                         if navController.viewControllers.count > 1 {
-        //                             navController.popViewController(animated: true)
-        //                         } else {
-        //                             navController.dismiss(animated: true)
-        //                         }
-        //                     } else if top.presentingViewController != nil {
-        //                         top.dismiss(animated: true)
-        //                     }
-        //                 }
-        //             }
-        //         }) {
-        //         HStack(spacing: 4) {
-        //             Image(systemName: "chevron.left")
-        //                 .font(.system(size: 18, weight: .medium))
-        //                 .foregroundColor(.black)
-        //         }
-        //         .padding(.horizontal, 12)
-        //         .padding(.vertical, 8)
-        //     }
-        //     }
-        // }
         .toolbar(.hidden, for: .tabBar)
-        .onAppear {
-            // 手动隐藏底部 tabbar（适用于 AI 页面等没有 NavigationController 的情况）
-            hideTabBar()
-            
-            if notifications.isEmpty {
-                getNotification(isRefresh: true)
-            }
-        }
-        .onDisappear {
-            // 显示底部 tabbar
-            showTabBar()
-        }
     }
 
      // MARK: - 自定义导航栏

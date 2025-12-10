@@ -13,29 +13,29 @@ import Foundation
 class MBCustomTabBar: UITabBar {
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        // 获取TabBar的宽度和高度
+        let major = ProcessInfo.processInfo.operatingSystemVersion.majorVersion
+        if major >= 19 { return }
         let tabBarWidth = self.frame.width
         let tabBarHeight = self.frame.height
-        
-        // 计算5个元素的均匀分布位置
-        // 每个元素占据的宽度 = tabBarWidth / 5
-        let itemWidth = tabBarWidth / 5
-        
-        // 重新排列4个文字按钮的位置，让它们按照5个元素的均匀分布排列
-        // 位置：0, 1, 2(按钮), 3, 4
-        // 但TabBar只有4个按钮，所以我们需要跳过位置2
-        let positions = [0, 1, 3, 4] // 跳过位置2，因为那里是红色按钮
-        
-        var itemIndex = 0
-        for subview in self.subviews {
-            if let item = subview as? UIControl {
-                if itemIndex < 4 { // 只处理前4个按钮
+        let controls = self.subviews.compactMap { $0 as? UIControl }
+        if controls.count == 4 {
+            let itemWidth = tabBarWidth / 5
+            let positions = [0, 1, 3, 4]
+            var itemIndex = 0
+            for item in controls where !(item is UIButton) {
+                if itemIndex < 4 {
                     let position = positions[itemIndex]
                     let x = CGFloat(position) * itemWidth + itemWidth / 2
                     item.center = CGPoint(x: x, y: tabBarHeight / 2)
                     itemIndex += 1
                 }
+            }
+        } else if controls.count >= 5 {
+            let itemWidth = tabBarWidth / 5
+            let sorted = controls.sorted { $0.frame.minX < $1.frame.minX }
+            for (idx, item) in sorted.enumerated().prefix(5) {
+                let x = CGFloat(idx) * itemWidth + itemWidth / 2
+                item.center = CGPoint(x: x, y: tabBarHeight / 2)
             }
         }
     }
@@ -45,7 +45,7 @@ class MBCustomTabBar: UITabBar {
 // MARK: - 主TabBar控制器 - 集成现有的MTHomeVC
 @objc(MBMainTabBarController)
 @MainActor
-public class MBMainTabBarController: UITabBarController {
+public class MBMainTabBarController: UITabBarController, UITabBarControllerDelegate {
     // 通过 selector 方式监听通知，避免在非隔离 deinit 中访问属性
     
     public override func viewDidLoad() {
@@ -56,6 +56,7 @@ public class MBMainTabBarController: UITabBarController {
         self.setValue(customTabBar, forKey: "tabBar")
         
         setupTabBar()
+        self.delegate = self
 
         // 监听需要登录的通知（用户信息被清除或登录失效）
         NotificationCenter.default.addObserver(
@@ -89,9 +90,7 @@ public class MBMainTabBarController: UITabBarController {
         
         // 创建AI栏目控制器（根据设计图重新设计）
         let aiVC = UIHostingController(rootView: AIView())
-        
-        // 直接使用UIHostingController作为TabBar的视图控制器，不包装在NavigationController中
-        aiVC.tabBarItem = UITabBarItem(title: "AI", image: nil, tag: 2)
+        aiVC.tabBarItem = UITabBarItem(title: "AI", image: nil, tag: 3)
         // let aiNav = MONavigationController(rootViewController: aiVC)
         // aiNav.tabBarItem = UITabBarItem(title: "AI", image: nil, tag: 2)
         
@@ -105,10 +104,22 @@ public class MBMainTabBarController: UITabBarController {
         let profileRoot = UIHostingController(rootView: MineViewController())
         let profileNav = MONavigationController(rootViewController: profileRoot)
 
-        profileNav.tabBarItem = UITabBarItem(title: "我的", image: nil, tag: 3)
+        profileNav.tabBarItem = UITabBarItem(title: "我的", image: nil, tag: 4)
         
-        // 设置视图控制器
-           self.viewControllers = [homeNav, sceneNav, aiVC, profileNav]
+        let publishVC = UIViewController()
+        publishVC.view.backgroundColor = .clear
+        let plusImage = UIImage(named: "icon_publish")?.withRenderingMode(.alwaysOriginal)
+        let publishItem = UITabBarItem(title: "", image: plusImage, selectedImage: plusImage)
+        publishItem.tag = 2
+        publishItem.titlePositionAdjustment = .zero
+        let major = ProcessInfo.processInfo.operatingSystemVersion.majorVersion
+        if major < 19 {
+            publishItem.imageInsets = UIEdgeInsets(top: -4, left: 0, bottom: 4, right: 0)
+        } else {
+            publishItem.imageInsets = UIEdgeInsets(top: 2, left: 0, bottom: -2, right: 0)
+        }
+        publishVC.tabBarItem = publishItem
+        self.viewControllers = [homeNav, sceneNav, publishVC, aiVC, profileNav]
 
         
         // 设置TabBar样式
@@ -223,11 +234,7 @@ public class MBMainTabBarController: UITabBarController {
         // 设置文字垂直位置，使其在导航条中垂直居中
         UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -22)
         
-        // 默认选中首页
         self.selectedIndex = 0
-        
-        // 添加中间的红色加号按钮
-        setupCenterPublishButton()
     }
 
     deinit {
@@ -239,6 +246,14 @@ public class MBMainTabBarController: UITabBarController {
         Task { @MainActor in
             self.presentLoginViewController()
         }
+    }
+
+    public func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if let vcs = self.viewControllers, let idx = vcs.firstIndex(of: viewController), idx == 2 {
+            presentUploadContentView()
+            return false
+        }
+        return true
     }
 
     @MainActor
@@ -258,38 +273,7 @@ public class MBMainTabBarController: UITabBarController {
         topVC.present(loginVC, animated: true)
     }
     
-    @MainActor
-    private func setupCenterPublishButton() {
-        // 创建中间的红色加号按钮
-        let centerButton = UIButton(type: .custom)
-        centerButton.backgroundColor = .clear
-        centerButton.setImage(UIImage(named: "icon_publish"), for: .normal)
-        centerButton.tintColor = .red
-        centerButton.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-        
-        // 计算按钮位置（5个元素的均匀分布）
-        let tabBarWidth = self.tabBar.frame.width
-        let tabBarHeight = self.tabBar.frame.height
-       
-        let buttonY = (ProcessInfo.processInfo.operatingSystemVersion.majorVersion < 19) ? tabBarHeight / 2 + 10.0 : tabBarHeight / 2
-        
-        // 计算5个元素的均匀分布位置
-        // 元素位置：0, 1, 2(按钮), 3, 4
-        // 每个元素占据的宽度 = tabBarWidth / 5
-        // 按钮应该在位置2，即 2 * (tabBarWidth / 5) + (tabBarWidth / 5) / 2
-        let itemWidth = tabBarWidth / 5
-        let buttonX = 2 * itemWidth + itemWidth / 2
-        centerButton.center = CGPoint(x: buttonX, y: buttonY)
-        
-        // 添加点击事件
-        centerButton.addTarget(self, action: #selector(centerButtonTapped), for: .touchUpInside)
-        
-        // 将按钮添加到TabBar
-        self.tabBar.addSubview(centerButton)
-        
-        // 确保按钮在最前面
-        self.tabBar.bringSubviewToFront(centerButton)
-    }
+    
     
     @objc private func centerButtonTapped() {
         print("发布按钮被点击")

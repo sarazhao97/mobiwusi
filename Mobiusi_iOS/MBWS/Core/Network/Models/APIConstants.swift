@@ -2,8 +2,8 @@ import Foundation
 
 struct APIConstants {
     // Base URL
-     static let baseURL = "http://api.dev.mobiwusi.com"
-    //    static let baseURL = "https://app-api.mobiwusi.com"
+    //  static let baseURL = "http://api.dev.mobiwusi.com"
+       static let baseURL = "https://app-api.mobiwusi.com"
 
     
     /// 添加你的私钥 PEM
